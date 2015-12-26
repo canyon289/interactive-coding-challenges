@@ -3,7 +3,7 @@ Contributing
 
 Contributions are welcome!
 
-Please carefully read this page before submitting a pull request.
+**Please carefully read this page to make the code review process go as smoothly as possible and to maximize the likelihood of your contribution being merged.**
 
 ## Bug Reports
 
@@ -12,6 +12,33 @@ For bug reports or requests [submit an issue](https://github.com/donnemartin/int
 ## Pull Requests
 
 **Please follow the general [Repo Structure](https://github.com/donnemartin/interactive-coding-challenges#repo-structure) and [Notebook Structure](https://github.com/donnemartin/interactive-coding-challenges#notebook-structure) before submitting your pull request.**
+
+The preferred way to contribute is to fork the
+[main repository](https://github.com/donnemartin/interactive-coding-challenges) on GitHub.
+
+1. Fork the [main repository](https://github.com/donnemartin/interactive-coding-challenges).  Click on the 'Fork' button near the top of the page.  This creates a copy of the code under your account on the GitHub server.
+
+2. Clone this copy to your local disk:
+
+        $ git clone git@github.com:YourLogin/interactive-coding-challenges.git
+        $ cd interactive-coding-challenges
+
+3. Create a branch to hold your changes and start making changes. Don't work in the ``master`` branch!
+
+        $ git checkout -b my-feature
+
+4. Work on this copy on your computer using Git to do the version control. When you're done editing, run the following to record your changes in Git:
+
+        $ git add modified_files
+        $ git commit
+
+5. Push your changes to GitHub with:
+
+        $ git push -u origin my-feature
+
+6. Finally, go to the web page of your fork of the interactive-coding-challenges repo and click 'Pull request' to send your changes for review.
+
+**Please submit one pull request per challenge.**
 
 ### GitHub Pull Requests Docs
 
@@ -54,7 +81,11 @@ When contributing to a notebook, update the notebook author(s):
 
 Please refer to the style of existing notebooks to help maintain consistency.  A consistently themed collection of notebooks will help users more seamlessly transition from challenge to challenge.
 
-Review [PEP-8](https://www.python.org/dev/peps/pep-0008/) and the following [style guide](https://google-styleguide.googlecode.com/svn/trunk/pyguide.html).
+Review the following [style guide](https://google-styleguide.googlecode.com/svn/trunk/pyguide.html).
+
+Review [PEP8](https://www.python.org/dev/peps/pep-0008/) and use a [validator](http://pep8online.com/).
+
+*Note: IPython Notebook doesn't seem to properly handle a blank line at the end of a code cell when writing the cell's contents to a file, as referenced in this [issue](https://github.com/ipython/ipython/issues/8626).  Notebook cells currently do not have a blank line at the end of each code cell.*
 
 ### Contributions in Languages Other than Python
 
